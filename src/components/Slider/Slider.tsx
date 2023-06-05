@@ -22,17 +22,17 @@ const Slider: React.FC<SliderInterface> = ({style}) => {
             {id: 7, localImg: "/images/photo-1598439210625-5067c578f3f6-min.png"},
             {id: 8, localImg: "/images/photo-1661956602868-6ae368943878-min.png"}
         ])
-    const [positionColor, setPositionColor] = useState(0)
+    const [positionImage, setPositionImage] = useState(0)
 
     //Slider for every 5 second
     useEffect(()=>{
         setTimeout(()=>{
-            setPositionColor(prev=>prev+1)
-            if(positionColor === images.length-1){
-                setPositionColor(0)
+            setPositionImage(prev=>prev+1)
+            if(positionImage === images.length-1){
+                setPositionImage(0)
             }
         },5000)
-    },[positionColor])
+    },[positionImage])
 
 
     return (
@@ -42,7 +42,7 @@ const Slider: React.FC<SliderInterface> = ({style}) => {
                 <div key={index} className={"one_slide"} style={{
                     backgroundImage: `url(${image.localImg})`,
                     backgroundSize:"100% 100%",
-                    transform: `translateX(-${positionColor * 100}%)`,
+                    transform: `translateX(-${positionImage * 100}%)`,
                 }}/>
             )}
         </div>

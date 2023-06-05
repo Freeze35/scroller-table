@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c5cce40-0276-40ac-8bec-48bf73297b5f" name="Changes" comment="v1.0.0 Slider-Table">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider/Slider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685787010973</updated>
       <workItem from="1685787012915" duration="19788000" />
-      <workItem from="1685828821070" duration="76505000" />
+      <workItem from="1685828821070" duration="77460000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 Slider-Table">
       <created>1685943358018</created>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685944129476</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v1.0.0 Slider-Table">
+      <created>1685944579881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685944579881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
