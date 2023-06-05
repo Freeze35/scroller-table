@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c5cce40-0276-40ac-8bec-48bf73297b5f" name="Changes" comment="v1.0.0 Slider-Table">
+    <list default="true" id="5c5cce40-0276-40ac-8bec-48bf73297b5f" name="Changes" comment="v1.0.1 Virtual-Scroll modify (offset,zIndex,opacity)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider/Slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider/Slider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,8 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685787010973</updated>
       <workItem from="1685787012915" duration="19788000" />
-      <workItem from="1685828821070" duration="77460000" />
+      <workItem from="1685828821070" duration="87576000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0.0 Slider-Table">
       <created>1685943358018</created>
@@ -122,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685944579881</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v1.0.0 Slider-Table">
+      <created>1685971873099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685971873099</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.0.0 Slider-Table" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0.0 Slider-Table" />
+    <MESSAGE value="v1.0.1 Virtual-Scroll modify (offset,zIndex,opacity)" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.1 Virtual-Scroll modify (offset,zIndex,opacity)" />
   </component>
 </project>
