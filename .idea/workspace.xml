@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c5cce40-0276-40ac-8bec-48bf73297b5f" name="Changes" comment="v1.0.0 Slider-Table">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/good-morning-image-531-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/images-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/istockphoto-1146517111-612x612-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/istockphoto-517188688-612x612-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/istockphoto-535695503-612x612-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/original-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/photo-1598439210625-5067c578f3f6-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/photo-1661956602868-6ae368943878-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Slider/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider/Slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider/Slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/AddField/AddField.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/AddField/AddField.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/AddField/AddField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/AddField/AddField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hooks/reduxHook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hooks/reduxHook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="5c5cce40-0276-40ac-8bec-48bf73297b5f" name="Changes" comment="v1.0.0 Slider-Table" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,8 +90,16 @@
       <option name="presentableId" value="Default" />
       <updated>1685787010973</updated>
       <workItem from="1685787012915" duration="19788000" />
-      <workItem from="1685828821070" duration="75174000" />
+      <workItem from="1685828821070" duration="75508000" />
     </task>
+    <task id="LOCAL-00001" summary="v1.0.0 Slider-Table">
+      <created>1685943358018</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685943358018</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
