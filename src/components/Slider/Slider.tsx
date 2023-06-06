@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useLayoutEffect, useState} from 'react';
 import "./Slider.css"
 interface SliderInterface {
     style: React.CSSProperties
@@ -12,7 +12,7 @@ interface colorsInterface {
 
 const Slider: React.FC<SliderInterface> = ({style}) => {
 
-    const [images, setImages] = useState<colorsInterface[]>(
+    let [images, setImages] = useState<colorsInterface[]>(
         [
             {id: 1, localImg: "/images/images-min.png"},
             {id: 2, localImg: "/images/good-morning-image-531-min.png"},
@@ -24,6 +24,64 @@ const Slider: React.FC<SliderInterface> = ({style}) => {
             {id: 8, localImg: "/images/photo-1661956602868-6ae368943878-min.png"}
         ])
     const [positionImage, setPositionImage] = useState(0)
+    const [changeList, setChangeList] = useState<colorsInterface[]>([])
+    const [animation, setAnimation]= useState(true)
+
+    useLayoutEffect(() => {
+        setChangeList([...images.slice(0, 3).map(
+            (image:colorsInterface,id) => {
+
+                image.leftOffset = (positionImage+id) * 100
+                return image
+            })])
+    },[])
+
+    useLayoutEffect(() => {
+        setAnimation(true)
+        setTimeout(()=>{
+            const checkFirstPosition = () =>{
+                if(positionImage + 1 % images.length === 0 || positionImage === 0){
+                    return 0
+                }
+                else {
+                    return positionImage % images.length
+                }
+            }
+
+            const checkLastPosition=()=>{
+
+                if(positionImage+3 % images.length>0)
+                {
+                    return positionImage % images.length+3
+                }
+                else {
+                    return images.length % positionImage
+                }
+            }
+
+            const getNewSlice = () =>{
+                return [...images.slice(checkFirstPosition(), checkLastPosition()).map(
+                    (image:colorsInterface,id) => {
+
+                        image.leftOffset = (positionImage+id) * 100
+                        return image
+                    })]
+            }
+            if((positionImage+1)%2 === 0) {
+                setChangeList([...getNewSlice()])
+            }
+            if((positionImage+1)%images.length === 0){
+                setChangeList([...getNewSlice(),...images.slice(0, 3).map(
+                    (image:colorsInterface,id) => {
+
+                        image.leftOffset = (positionImage+id+1) * 100
+                        return image
+                    })])
+            }
+            setAnimation(false)
+        },2500)
+
+    }, [positionImage])
 
     //Slider for every 5 second
     useEffect(()=>{
@@ -35,28 +93,11 @@ const Slider: React.FC<SliderInterface> = ({style}) => {
         },5000)
     },[positionImage])
 
-    const zIndexArea = (offset:number|undefined) =>{
-        console.log(positionImage * 100 , offset)
-       return  positionImage * 100 === offset
-            ? 5
-            : 4
-    }
-    const opacityView = (offset:number|undefined) =>{
-        console.log(positionImage * 100 , offset)
-
-        return  positionImage * 100 === offset || positionImage === 0
-            ? 1
-            : 0
-
-    }
-
     return (
         <div style={{...style}} className="slider_block animate">
-            {images.map((image, index) =>
+            {changeList.map((image, index) =>
 
-                <div key={index} className={"one_slide"} style={{
-                    opacity: opacityView(image.leftOffset),
-                    zIndex: zIndexArea(image.leftOffset) ,
+                <div key={index} className={animation?"one_slide animate":"one_slide"} style={{
                     marginLeft:`${image.leftOffset}%`,
                     backgroundImage: `url(${image.localImg})`,
                     backgroundSize:"100% 100%",
@@ -70,7 +111,21 @@ const Slider: React.FC<SliderInterface> = ({style}) => {
 export default Slider;
 
 
+//test Data for next modifications
+
 //const [changeList, setChangeList] = useState<colorsInterface[]>([])
+
+/*const zIndexArea = (offset:number|undefined) =>{
+    return  positionImage * 100 === offset
+        ? 5
+        : 4
+}
+const opacityView = (offset:number|undefined) =>{
+    return  positionImage * 100 === offset || positionImage === 0
+        ? 1
+        : 0
+
+}*/
 
 /*useLayoutEffect(() => {
 

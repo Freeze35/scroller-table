@@ -15,5 +15,8 @@
     background-attachment: fixed;
     min-height: 100%;
     min-width: 100%;
+}
+
+.animate{
     transition: 0.3s;
 }
